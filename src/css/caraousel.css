@@ -1,0 +1,28 @@
+.carousel__container {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* gives us the illusion of a "centered" slide */
+.carousel__slider {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* gives us the illusion of spaces between the slides */
+.carousel__inner-slide {
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.next-button {
+  position: absolute;
+  top: 50%; /* Adjust this value to position the button vertically */
+  right: 10px; /* Adjust this value to position the button horizontally */
+  transform: translate(0, -50%); /* Center the button vertically based on its height */
+  z-index: 2; /* Place the button above the images */
+}
